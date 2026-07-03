@@ -1,0 +1,57 @@
+# Input data
+input/*
+wgs_reads/*
+wgs_trimmed/*
+wgs_assembly/*
+wgs_qc/*
+ncbi_downloads/*
+sra_downloads/*
+
+# Results and temporary files
+results/*
+tmp/*
+database/*
+localDB/*
+rgi_autoload_*/
+rgi_autoload__*/
+
+# RGI/CARD local databases
+card.json
+card_database_v*.fasta
+*.dmnd
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large bioinformatics files
+*.fna
+*.fa
+*.fasta
+*.fastq
+*.fq
+*.gz
+*.zip
+*.faa
+*.gbk
+*.gff
+*.sam
+*.bam
+*.vcf
+*.tsv
+*.xlsx
+*.csv
+
+# Backup files
+app_backup_before_rgi_gui.py
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Keep folders
+!input/.gitkeep
+!wgs_reads/.gitkeep
+!results/.gitkeep
+!database/.gitkeep
+!tmp/.gitkeep

@@ -1,0 +1,22 @@
+name: amr_tools
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - streamlit
+  - pandas
+  - matplotlib
+  - openpyxl
+  - prodigal
+  - ncbi-amrfinderplus
+  - ncbi-datasets-cli
+  - abricate
+  - fastp
+  - spades
+  - quast
+  - sra-tools
+  - diamond
+  - blast
+  - pip
