@@ -1,0 +1,12 @@
+tasks:
+  - init: |
+      conda env create -f environment_rgi.yml
+      echo "source activate amr_intel" >> ~/.bashrc
+      source activate amr_intel
+      rgi database --download --card
+    command: |
+      source activate amr_intel
+      streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+ports:
+  - port: 8501
+    onOpen: open-browser
